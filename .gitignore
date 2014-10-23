@@ -39,7 +39,9 @@ Makefile.in
 # Unix binaries
 /src/unpgf
 /src/untnd
+/src/unglue
 
 # Windows binaries
 /src/unpgf.exe
 /src/untnd.exe
+/src/unglue.exe

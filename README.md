@@ -14,3 +14,4 @@ Currently, the following tools are included:
 * unpgf: Extract PGF archives, found in the Sega Saturn versions
 * untnd: Extract TND archives, found in the Sega Saturn versions
          (inside PGF archives)
+* unglue: Extract Glue archives, found in the Window versions

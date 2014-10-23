@@ -10,6 +10,7 @@ noinst_HEADERS = \
 bin_PROGRAMS = \
                unpgf \
                untnd \
+               unglue \
                $(EMPTY)
 
 unpgf_SOURCES = \
@@ -23,5 +24,12 @@ untnd_SOURCES = \
                 untnd.cpp \
                 $(EMPTY)
 untnd_LDADD   = \
+                common/libcommon.la \
+                $(EMPTY)
+
+unglue_SOURCES = \
+                unglue.cpp \
+                $(EMPTY)
+unglue_LDADD   = \
                 common/libcommon.la \
                 $(EMPTY)
