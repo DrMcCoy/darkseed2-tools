@@ -139,4 +139,16 @@ bool dumpToFile(std::istream &input, uint32 offset, uint32 size, const std::stri
 	return input.good() && outFile.good();
 }
 
+uint32 getSize(std::istream &stream) {
+	uint32 pos = stream.tellg();
+
+	stream.seekg(0, std::ios_base::end);
+
+	uint32 size = stream.tellg();
+
+	stream.seekg(pos, std::ios_base::beg);
+
+	return stream.good() ? size : 0xFFFFFFFF;
+}
+
 } // End of namespace Common

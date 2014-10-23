@@ -55,6 +55,8 @@ template <typename T> void SWAP(T &a, T &b) { T tmp = a; a = b; b = tmp; }
 
 namespace Common {
 
+uint32 getSize(std::istream &stream);
+
 uint8  readUint8   (std::istream &stream);
 uint16 readUint16BE(std::istream &stream);
 uint16 readUint16LE(std::istream &stream);
