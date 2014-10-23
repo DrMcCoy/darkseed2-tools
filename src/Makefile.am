@@ -9,11 +9,19 @@ noinst_HEADERS = \
 
 bin_PROGRAMS = \
                unpgf \
+               untnd \
                $(EMPTY)
 
 unpgf_SOURCES = \
                 unpgf.cpp \
                 $(EMPTY)
 unpgf_LDADD   = \
+                common/libcommon.la \
+                $(EMPTY)
+
+untnd_SOURCES = \
+                untnd.cpp \
+                $(EMPTY)
+untnd_LDADD   = \
                 common/libcommon.la \
                 $(EMPTY)
