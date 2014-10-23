@@ -112,4 +112,31 @@ void readFixedString(std::istream &stream, char *str, int n) {
 	str[n] = '\0';
 }
 
+bool dumpToFile(std::istream &input, uint32 offset, uint32 size, const std::string &output) {
+	input.seekg(offset, std::ios_base::beg);
+
+	if (input.tellg() != offset)
+		return false;
+
+	std::ofstream outFile;
+
+	outFile.open(output.c_str());
+	if (!outFile.is_open())
+		return false;
+
+	char buffer[4096];
+	while (size > 0) {
+		uint32 toRead = MIN<uint32>(size, 4096);
+
+		input.read(buffer, toRead);
+		outFile.write(buffer, toRead);
+
+		size -= toRead;
+	}
+
+	outFile.flush();
+
+	return input.good() && outFile.good();
+}
+
 } // End of namespace Common

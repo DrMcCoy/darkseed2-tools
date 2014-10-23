@@ -36,6 +36,7 @@
 
 #include "common/types.h"
 
+#include <string>
 #include <istream>
 
 #ifdef MAX
@@ -66,6 +67,8 @@ uint32 readUint32BE(const byte *data);
 uint32 readUint32LE(const byte *data);
 
 void readFixedString(std::istream &stream, char *str, int n);
+
+bool dumpToFile(std::istream &input, uint32 offset, uint32 size, const std::string &output);
 
 } // End of namespace Common
 
