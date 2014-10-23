@@ -8,3 +8,7 @@ Inc.
 The tools included here are licensed under the terms of the [BSD
 2-Clause License](http://opensource.org/licenses/BSD-2-Clause).
 Please see the AUTHORS and COPYING files for details.
+
+Currently, the following tools are included:
+
+* unpgf: Extract PGF archives, found in the Sega Saturn versions

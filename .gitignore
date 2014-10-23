@@ -35,3 +35,9 @@ Makefile.in
 /m4/lib-prefix.m4
 /m4/pkg.m4
 /stamp-h1
+
+# Unix binaries
+/src/unpgf
+
+# Windows binaries
+/src/unpgf.exe
