@@ -1,6 +1,6 @@
 AC_PREREQ([2.65])
 
-AC_INIT([darkseed2-tools],[0.0.0],[drmccoy@drmccoy.de],[darkseed2-tools],[https://github.com/DrMcCoy/darkseed2-tools/])
+AC_INIT([darkseed2-tools],[1.0.0],[drmccoy@drmccoy.de],[darkseed2-tools],[https://github.com/DrMcCoy/darkseed2-tools/])
 
 AC_CONFIG_HEADERS([config.h])
 AC_CONFIG_SRCDIR([config.h.in])
